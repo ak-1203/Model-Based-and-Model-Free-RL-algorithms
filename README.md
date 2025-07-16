@@ -37,10 +37,10 @@ The agent can take one of four possible actions:
 - **3:** Up  -->
 | Value | Action     |
 |-------|----------- |
-| 0     | Turn Left  |
-| 1     | Turn Down  |
-| 2     | Turn Right |
-| 3     | Turn Up    |  
+| 0     | Move Left  |
+| 1     | Move Down  |
+| 2     | Move Right |
+| 3     | Move Up    |  
 
 #### Transition Matrix , P :
 For each pair of states in `[1, nS]` and actions in `[1, nA]`, `P[state][action]` is a tuple in the form of `(probability, next_state, reward, terminal)`.
@@ -96,8 +96,8 @@ Relevant actions for this environment:
 | Value | Action     |
 |-------|----------- |
 | 0     | Turn Left  |
-| 1     | Turn Down  |
-| 2     | Turn Right | 
+| 1     | Turn right  |
+| 2     | Move forward| 
 
 When an action `a` is taken:  
 `env.step(a)` returns a tuple:  
